@@ -83,7 +83,8 @@ for(int i = 0; i < units2.Length; i++)
 // GPA Calculation
 double totalUnits = units.Sum();
 double totalProducts = products.Sum();
-double gpa = totalProducts / totalUnits;
+// Roundup GPA result to 2 d.p.
+double gpa = Math.Round(totalProducts / totalUnits, 2);
 
 // Print Result
 Console.WriteLine("---------------------");
